@@ -1,5 +1,3 @@
-now=$(date)
-
-
-g++ -std=c++11 1-24-24/1-24-24.cpp
+now="$(date +'%m-%d-%y')"
+g++ -std=c++11 $now/$now.cpp
 ./a.out
