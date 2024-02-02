@@ -25,8 +25,9 @@ int main() {
     cout << *new_int << endl;
 
     Fraction f1;
-    f1.num = 22;
-    f1.denom = 7;
+    // Next class:
+    // f1.num = 22;
+    // f1.denom = 7;
 }
 
 int greater_count(const vector<int>& vec, const int threshold) {
