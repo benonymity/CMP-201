@@ -1,5 +1,6 @@
 # CMP-201-01
 ### Assignment 1 - 1/31/24
+#### Benjamin Bassett
 ___
 1. See `1.1.cpp`
 2. See `1.2.cpp`
