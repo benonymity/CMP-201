@@ -1,7 +1,9 @@
 #include <iostream>
 #include <list>
 
-template <class T>
+// This has been suceeded
+// template <class T>
+template <typename T>
 class Node {
     public:
     private:
