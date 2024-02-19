@@ -13,6 +13,7 @@ template <typename T> class Node {
     void set_next(Node<T> *item) { next = item; }
 
     Node<T> get_next() { return next; }
+
   private:
     T data;
     Node<T> *next;
@@ -25,12 +26,12 @@ template <typename T> class List {
     bool is_empty() const { return (first || last); }
 
     void print() {
-      Node<T>* curr;
-      while (curr != NULL) {
-        std::cout << curr->data << " ";
-        curr = curr->next;
-      }
-      std::cout << std::endl;
+        Node<T> *curr;
+        while (curr != NULL) {
+            std::cout << curr->data << " ";
+            curr = curr->next;
+        }
+        std::cout << std::endl;
     }
 
     void push_front(const T &item) {
