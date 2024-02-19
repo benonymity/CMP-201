@@ -1,8 +1,12 @@
 AlignTrailingComments: true
-AllowShortFunctionsOnASingleLine: true
-AllowShortIfStatementsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
 AllowShortLoopsOnASingleLine: true
 BreakBeforeBinaryOperators: false
 IndentWidth: 4
-SortIncludes: false
-NamespaceIndentation: All
+SortIncludes: true
+# NamespaceIndentation: All
+DerivePointerAlignment: false
+PointerAlignment: Left
+PackConstructorInitializers: NextLineOnly
+SortIncludes: CaseInsensitive
