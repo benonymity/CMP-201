@@ -8,7 +8,7 @@ int* give_pointer();
 class Fraction {
     int num;
     int denom;
-}
+};
 
 int main() {
     vector<int> nums = {1, 5, 10, 15, 20, 25, 30};

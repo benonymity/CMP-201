@@ -9,4 +9,4 @@ SortIncludes: true
 DerivePointerAlignment: false
 PointerAlignment: Left
 PackConstructorInitializers: NextLineOnly
-SortIncludes: CaseInsensitive
+# SortIncludes: CaseInsensitive
