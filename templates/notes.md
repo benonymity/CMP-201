@@ -1,4 +1,4 @@
 # CMP-201-01
-### _____, Feburary __ - Class __
+### _____, March __ - Class __
 
 - 

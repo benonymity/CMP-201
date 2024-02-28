@@ -1,0 +1,32 @@
+# CMP-201-01
+### Wednesday, Feburary 28 - Class 18
+
+- `n!` possible initial sorts of `n` items
+- That doesn't scale well
+- Binary search:
+    - Guess half, eliminate half of remaining search area
+    - If we double input size, we add one iteration
+    - This is logarithmic complexity, which is really great!
+- So our list, from best to worst, of efficency is:
+    - Constant
+    - $\ln(n)$
+    - $n\ln(n)$
+    - $n^2$
+    - $n^3$
+    - ...
+    - $2^n$
+    - $3^2$
+    - $n!$
+    - $n^n$
+- $\log$ vs. $\ln$ vs. $\lg$
+- Python's dictionary structure
+- We want to find a functino so that f(value) always gets us to the index of that value if it's in the data structure. What if the values were the same as the indices? Nope. let's make a table of $m$ items, where $m > n$.
+- Requirements
+    - f has constraints
+    - Quick to compute
+    - Distribute the keys among the cells of the table as evenly as possible
+    - The table should not be extremely large
+- Ex: `h(k) = k mod m`
+    - string input: $\sum^{s-1}_{i=0} \text{ord}(C_{i})\mod m$
+    - Hash mapping (look it up more later)
+    - How do we avoid duplicates?
