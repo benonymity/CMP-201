@@ -34,7 +34,6 @@ class Mathy {
         } else if (exec == "sqrt") {
             sqrt();
         }
-        // To fulfill int return
         return 0;
     }
 
@@ -221,7 +220,6 @@ int main() {
                  " |     \\ \\/ /    \n _| |_\\/_| |_  _/ /   \\ \\_  _| |_    "
                  "_| |  | |_    _|  |_    \n|_____||_____||____| |____||_____| "
                  " |____||____|  |______|   \n\n";
-
     int out;
     // Iterate through instructions
     for (std::string instruction : instructions) {
