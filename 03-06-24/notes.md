@@ -10,4 +10,3 @@
     - CMP-393: Philosophy of AI (this fall. has the Republic)
     - MTH-425: Cryptography (in the math department that can count as CS)
 - `protected` keyword
-- 

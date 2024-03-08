@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 class Item {
   public:
@@ -15,7 +16,7 @@ class Item {
         return price;
     }
 
-    std::string to_string() const {
+    virtual std::string to_string() const {
         std::string result;
         result = "Price: " + std::to_string(price) +
                  "\nInventory ID: " + std::to_string(inventory_id);
@@ -58,7 +59,7 @@ class Book : public Item {
         return Item::price;
     }
 
-    std::string to_string() const {
+    std::string to_string() const override {
         std::string result;
         result = "Price: $" + std::to_string(price) + "\nTitle: " + title +
                  "\nAuthor: " + author + "\nPages: " + std::to_string(pages) +
@@ -97,7 +98,7 @@ class Pen : public Item {
         std::cout << "Pen constructed\n";
     }
 
-    std::string to_string() {
+    std::string to_string() const override {
         std::string result;
         result = "Price: $" + std::to_string(price) +
                  "\nWidth: " + std::to_string(width) +
@@ -130,9 +131,29 @@ int main() {
     std::cout << pen.is_metal << "\n";
 
     Item item;
-    item = book;
+    // item = pen;
     std::cout << item.to_string() << "\n";
     std::cout << item.get_price() << "\n";
     // Doesn't work:
     // std::cout << item.is_metal << "\n";
+
+    Item item2;
+
+    // Incomplete implementatino that loses attributes
+    std::vector<Item> inventory;
+    inventory.push_back(book);
+    inventory.push_back(pen);
+
+    for (Item item : inventory) {
+        std::cout << item.to_string() << "\n";
+    }
+
+    std::vector<Item*> realinventory;
+    realinventory.push_back(&book);
+    realinventory.push_back(&pen);
+    realinventory.push_back(&item2);
+
+    for (Item* item : realinventory) {
+        std::cout << item->to_string() << "\n";
+    }
 }
